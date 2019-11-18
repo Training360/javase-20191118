@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class EmployeeTest {
 
     public EmployeeTest() {
-        System.out.println("PELDANYOSITAS");
+        System.out.println("Constructor");
     }
 
     @Test
