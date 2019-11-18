@@ -6,6 +6,9 @@ public class Employee {
     private int yearOfBirth;
 
     public Employee(String name, int yearOfBirth) {
+        if (yearOfBirth < 0) {
+            throw new IllegalArgumentException("Must be positive");
+        }
         this.name = name;
         this.yearOfBirth = yearOfBirth;
     }

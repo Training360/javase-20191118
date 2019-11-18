@@ -1,4 +1,4 @@
-package empapp;
+package locations;
 
 import locations.Location;
 import org.junit.jupiter.api.Test;
