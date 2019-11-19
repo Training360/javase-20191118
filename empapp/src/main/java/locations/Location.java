@@ -4,16 +4,33 @@ public class Location {
 
     public final static double AVERAGE_RADIUS_OF_EARTH = 6371;
 
+    private String id;
+
     private String name;
 
     private double lat;
 
     private double lon;
 
+    public Location(String id, String name, double lat, double lon) {
+        this.id = id;
+        this.name = name;
+        this.lat = lat;
+        this.lon = lon;
+    }
+
     public Location(String name, double lat, double lon) {
         this.name = name;
         this.lat = lat;
         this.lon = lon;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getName() {
